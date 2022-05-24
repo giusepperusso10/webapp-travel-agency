@@ -1,10 +1,12 @@
 ﻿using NetCore_01.Utils.Validation;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NetCore_01.Models
 {
     public class Post
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage="Il campo titolo è obbligatorio")]
@@ -13,6 +15,7 @@ namespace NetCore_01.Models
         public string Title { get; set; }
 
         [Required(ErrorMessage = "Il campo descrizione è obbligatorio")]
+        [Column(TypeName = "text")]
         public string Description { get; set; }
 
         [Required(ErrorMessage = "l'URL dell'immagine è obbligatoria")]
@@ -26,9 +29,8 @@ namespace NetCore_01.Models
 
         }
 
-        public Post(int id, string title, string description, string image,int price)
+        public Post(string title, string description, string image, int price)
         {
-            this.Id = id;
             this.Title = title;
             this.Description = description;
             this.Image = image;

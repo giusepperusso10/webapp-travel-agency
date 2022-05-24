@@ -1,28 +1,26 @@
-﻿<Properties StartupConfiguration="{76458043-8B02-4A98-BED1-5B1791EA5F52}|il_mio_primo_blog_02_layout">
+﻿<Properties StartupConfiguration="{95CEE5DC-29EB-459B-A5A4-5DAC8C2D4C5C}|il_mio_primo_blog_02_layout">
   <MonoDevelop.Ide.ItemProperties.il-mio-primo-blog-02-layout PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_LayoutApp.cshtml">
     <Files>
-      <File FileName="Views/Shared/_LayoutApp.cshtml" Line="29" Column="1" />
-      <File FileName="Views/Post/HomePage.cshtml" Line="41" Column="69" />
-      <File FileName="Utils/PostData.cs" Line="28" Column="183" />
-      <File FileName="Models/Post.cs" Line="22" Column="39" />
-      <File FileName="Controllers/PostController.cs" Line="77" Column="1" />
-      <File FileName="Views/Post/Update.cshtml" Line="17" Column="45" />
-      <File FileName="Views/Post/Details.cshtml" Line="13" Column="41" />
+      <File FileName="Views/Shared/_LayoutApp.cshtml" Line="16" Column="1" />
+      <File FileName="Controllers/Api/PostsController.cs" Line="26" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="il-mio-primo-blog-02-layout" expanded="True">
+          <Node name="Agenzia Viaggi 1" expanded="True">
             <Node name="il-mio-primo-blog-02-layout" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Utils" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="Api" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Utils" expanded="True">
+                <Node name="Validation" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Post" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="_LayoutApp.cshtml" selected="True" />
                 </Node>

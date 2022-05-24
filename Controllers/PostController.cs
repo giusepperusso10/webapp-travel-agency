@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NetCore_01.Data;
 using NetCore_01.Models;
 using NetCore_01.Utils;
 using System.ComponentModel.DataAnnotations;
@@ -8,10 +9,25 @@ namespace NetCore_01.Controllers
     public class PostController : Controller
     {
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string SearchString)
         {
+            
 
-            List<Post> posts = PostData.GetPosts();
+            List<Post> posts = new List<Post>();
+
+
+            using (BlogContext db = new BlogContext())
+            {
+
+                // LOGICA PER RICERCARE I POST CHE CONTENGONO NEL TIUOLO O NELLA DESCRIZIONE LA STRINGA DI RICERCA
+                if (SearchString != null)
+                {
+                    posts = db.Posts.Where(post => post.Title.Contains(SearchString) || post.Description.Contains(SearchString)).ToList<Post>();
+                } else
+                {
+                    posts = db.Posts.ToList<Post>();
+                } 
+            }
 
             return View("HomePage", posts);
         }
@@ -19,15 +35,26 @@ namespace NetCore_01.Controllers
         [HttpGet]
         public IActionResult Details(int id)
         {
-            Post postFound = GetPostById(id);
 
-            if (postFound != null)
+            using (BlogContext db = new BlogContext())
             {
-                return View("Details", postFound);
-            } else
-            {
-                return NotFound("Il post con id " + id + " non è stato trovato");
+                try
+                {
+                    Post postFound = db.Posts
+                         .Where(post => post.Id == id)
+                         .First();
+
+                    return View("Details", postFound);
+
+                } catch (InvalidOperationException ex)
+                {
+                    return NotFound("Il post con id " + id + " non è stato trovato");
+                } catch (Exception ex)
+                {
+                    return BadRequest();
+                }    
             }
+
         }
 
         [HttpGet]
@@ -45,10 +72,13 @@ namespace NetCore_01.Controllers
                 return View("FormPost", nuovoPost);
             }
 
-            Post nuovoPostConId = new Post(PostData.GetPosts().Count, nuovoPost.Title, nuovoPost.Description, nuovoPost.Image, nuovoPost.Price);
+            using(BlogContext db = new BlogContext())
+            {
+                Post postToCreate = new Post(nuovoPost.Title, nuovoPost.Description, nuovoPost.Image, nuovoPost.Price);
 
-            // Il mio modello è corretto
-            PostData.GetPosts().Add(nuovoPostConId);
+                db.Posts.Add(postToCreate);
+                db.SaveChanges();  
+            }
 
             return RedirectToAction("Index");
         }
@@ -56,7 +86,15 @@ namespace NetCore_01.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Post postToEdit = GetPostById(id);
+            Post postToEdit = null;
+
+            using (BlogContext db = new BlogContext())
+            {
+                postToEdit = db.Posts
+                     .Where(post => post.Id == id)
+                     .FirstOrDefault();
+
+            }
 
             if (postToEdit == null)
             {
@@ -65,6 +103,7 @@ namespace NetCore_01.Controllers
             {
                 return View("Update", postToEdit);
             }
+
         }
 
         [HttpPost]
@@ -75,62 +114,56 @@ namespace NetCore_01.Controllers
                 return View("Update", model);
             }
 
-            Post postOriginal = GetPostById(id);
+            Post postToEdit = null;
 
-            if(postOriginal != null)
+            using (BlogContext db = new BlogContext())
             {
-                postOriginal.Title = model.Title;
-                postOriginal.Description = model.Description;
-                postOriginal.Image = model.Image;
-                postOriginal.Price = model.Price;
+                postToEdit = db.Posts
+                     .Where(post => post.Id == id)
+                     .FirstOrDefault();
 
-                return RedirectToAction("Index");
-            } else
-            {
-                return NotFound();
+
+                if (postToEdit != null)
+                {
+                    postToEdit.Title = model.Title;
+                    postToEdit.Description = model.Description;
+                    postToEdit.Image = model.Image;
+                    postToEdit.Price = model.Price;
+
+
+                    db.SaveChanges();
+
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return NotFound();
+                }
             }
         }
 
         [HttpPost]
         public IActionResult Delete(int id)
         {
-            int PostIndexToRemove = -1;
 
-            List<Post> postList = PostData.GetPosts();
-
-            for(int i = 0; i < postList.Count; i++)
+            using (BlogContext db = new BlogContext())
             {
-                if(postList[i].Id == id)
+                Post? postToDelete = db.Posts
+                     .Where(post => post.Id == id)
+                     .FirstOrDefault();
+
+                if(postToDelete != null)
                 {
-                    PostIndexToRemove = i;
+                    db.Posts.Remove(postToDelete);
+                    db.SaveChanges();
+
+                    return RedirectToAction("Index", "Post");
+                } else
+                {
+                    return NotFound();
                 }
-            }
-
-            if (PostIndexToRemove >= 0)
-            {
-                PostData.GetPosts().RemoveAt(PostIndexToRemove);
-
-                return RedirectToAction("Index");
-            } else
-            {
-                return NotFound();
             }
         }
 
-        private Post GetPostById(int id)
-        {
-            Post postFound = null;
-
-            foreach (Post post in PostData.GetPosts())
-            {
-                if (post.Id == id)
-                {
-                    postFound = post;
-                    break;
-                }
-            }
-
-            return postFound;
-        }
     }
 }

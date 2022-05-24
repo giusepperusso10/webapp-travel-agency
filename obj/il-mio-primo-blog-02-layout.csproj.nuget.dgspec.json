@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj": {}
+    "/Users/giusepperusso/Downloads/prova4/il-mio-primo-blog-02-layout.csproj": {}
   },
   "projects": {
-    "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj": {
+    "/Users/giusepperusso/Downloads/prova4/il-mio-primo-blog-02-layout.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj",
+        "projectUniqueName": "/Users/giusepperusso/Downloads/prova4/il-mio-primo-blog-02-layout.csproj",
         "projectName": "il-mio-primo-blog-02-layout",
-        "projectPath": "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj",
+        "projectPath": "/Users/giusepperusso/Downloads/prova4/il-mio-primo-blog-02-layout.csproj",
         "packagesPath": "/Users/giusepperusso/.nuget/packages/",
-        "outputPath": "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/obj/",
+        "outputPath": "/Users/giusepperusso/Downloads/prova4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/giusepperusso/.nuget/NuGet/NuGet.Config"
@@ -41,6 +41,16 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
             }
           },
           "imports": [
