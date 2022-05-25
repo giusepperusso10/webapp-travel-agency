@@ -3,10 +3,14 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_LayoutApp.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/BlogContext.cs">
     <Files>
-      <File FileName="Views/Shared/_LayoutApp.cshtml" Line="16" Column="1" />
-      <File FileName="Controllers/Api/PostsController.cs" Line="26" Column="1" />
+      <File FileName="Controllers/Api/PostsController.cs" Line="28" Column="14" />
+      <File FileName="Views/Post/FormPack.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Post/FormPost.cshtml" Line="19" Column="8" />
+      <File FileName="Models/User.cs" Line="1" Column="1" />
+      <File FileName="Models/Pack.cs" Line="1" Column="1" />
+      <File FileName="Data/BlogContext.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,14 +20,24 @@
               <Node name="Controllers" expanded="True">
                 <Node name="Api" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pack.cs" expanded="True" />
               <Node name="Utils" expanded="True">
                 <Node name="Validation" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True">
-                  <Node name="_LayoutApp.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Post" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="User" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="img" expanded="True" />
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True" />
               </Node>
             </Node>
           </Node>

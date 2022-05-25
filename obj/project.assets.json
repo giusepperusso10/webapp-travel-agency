@@ -2566,11 +2566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/giusepperusso/Downloads/prova4/il-mio-primo-blog-02-layout.csproj",
+      "projectUniqueName": "/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/il-mio-primo-blog-02-layout.csproj",
       "projectName": "il-mio-primo-blog-02-layout",
-      "projectPath": "/Users/giusepperusso/Downloads/prova4/il-mio-primo-blog-02-layout.csproj",
+      "projectPath": "/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/il-mio-primo-blog-02-layout.csproj",
       "packagesPath": "/Users/giusepperusso/.nuget/packages/",
-      "outputPath": "/Users/giusepperusso/Downloads/prova4/obj/",
+      "outputPath": "/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/giusepperusso/.nuget/NuGet/NuGet.Config"

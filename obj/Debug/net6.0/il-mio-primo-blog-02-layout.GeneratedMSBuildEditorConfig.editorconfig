@@ -8,57 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NetCore_01
 build_property.RootNamespace = NetCore_01
-build_property.ProjectDir = /Users/giusepperusso/Downloads/prova4/
+build_property.ProjectDir = /Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = /Users/giusepperusso/Downloads/prova4
+build_property.MSBuildProjectDirectory = /Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/Home/Index.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/Post/Details.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/Post/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/Post/FormPost.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/Post/FormPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9Gb3JtUG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/Post/HomePage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9Ib21lUGFnZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/giusepperusso/Downloads/prova4/Views/Post/Update.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/Post/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/Shared/Error.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/User/Index.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/_ViewImports.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/_ViewStart.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/giusepperusso/Downloads/prova4/Views/Shared/_Layout.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mday91fgjh
 
-[/Users/giusepperusso/Downloads/prova4/Views/Shared/_LayoutApp.cshtml]
+[/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/Views/Shared/_LayoutApp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXRBcHAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xx5ba22352

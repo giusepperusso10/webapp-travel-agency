@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p+ywL8CDraFoe3yBuE4/CKkNC7sR+V8wWzONh+JkRVgwzigki5g5re2EKRU8DNNP87d2lzcPFP/hHnrYJUszlw==",
+  "dgSpecHash": "ksuOsFe1uT4ZkCh95+xPS1yBQIdge0yigFtk28qr3+VDS29JBbgFQHJ1x5BTg21BCcym1b5fQ/+9iB5iidLLBw==",
   "success": true,
-  "projectFilePath": "/Users/giusepperusso/Downloads/prova4/il-mio-primo-blog-02-layout.csproj",
+  "projectFilePath": "/Users/giusepperusso/Desktop/Esercizi Generation/webapp-travel-agency/il-mio-primo-blog-02-layout.csproj",
   "expectedPackageFiles": [
     "/Users/giusepperusso/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/giusepperusso/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/6.0.4/microsoft.aspnetcore.mvc.razor.extensions.6.0.4.nupkg.sha512",
